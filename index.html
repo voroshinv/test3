@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Test_form</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <a href="form1.html" class="form_button form_open"> Go! </a>
+
+    <section class="modal" id="form_modal">
+      <div class="form">
+      <button class="close"></button>
+      <h1>Title form</h1>
+        <form class="userdata" action="index.html" method="post">
+          <div class="form_section">
+            <input type="text" name="firstname" value="" placeholder="First Name *" required>
+            <br>
+            <input type="text" name="lastname" value="" placeholder="Last Name *" required>
+            <br>
+            <input type="email" name="email" value="" placeholder="user@gmail.com" required>
+          </div>
+          <div class="form_section select_product">
+            <span class="label_select">Product type*</span>
+            <select class="" name="" id="prodtype" required>
+              <option>Select product type</option>
+              <option value="50">Product 50$</option>
+              <option value="100">Product 100$</option>
+              <option value="300">Product 300$</option>
+            </select>
+          </div>
+          <div class="form_section addfeature">
+            <span>Additional feature for $100</span>
+            <label class="switch">
+              <input type="checkbox" value="100">
+              <span class="slider round"></span>
+            </label>
+          </div>
+          <div class="form_section addfeature">
+            <span>Additional feature for $200</span>
+            <label class="switch">
+              <input type="checkbox" value="200">
+              <span class="slider round"></span>
+            </label>
+          </div>
+          <textarea name="name" rows="4" placeholder="Type your comment"></textarea>
+          <br>
+          <div class="form_section total">
+            <span>Total price</span>
+            <span class="total_price"><span>$</span>0</span>
+          </div>
+          <input type="submit" name="send" value="Send form" class="send_button">
+        </form>
+      </div>
+    </section>
+
+    <script src="script.js" charset="utf-8"></script>
+  </body>
+</html>
